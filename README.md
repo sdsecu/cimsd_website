@@ -1,4 +1,4 @@
-## CIMSD protfolio
+## CIMSD portofolio
 
 ```
 Main cimsd website. Used to display who we are as a group and what we do.
