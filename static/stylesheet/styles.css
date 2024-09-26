@@ -9,6 +9,34 @@ body {
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+    pre.title {
+        font-size: 5px;
+    }
+
+    p span {
+        font-size: 0.9em;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 /* Arrière-plan */
 body::before {
     content: "";
@@ -17,7 +45,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image.png'); /* Assurez-vous que "image.png" est le bon chemin */
+    background-image: url('/static/img/image.png'); /* Assurez-vous que "image.png" est le bon chemin */
     background-size: cover;
     background-position: center;
     opacity: 0.5; /* Opacité à 50% */
@@ -32,22 +60,30 @@ header {
 }
 
 header img {
-    width: 200px;
+    max-width: 200px;
     height: auto;
 }
 
 h1 {
     color: #00aaff;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 10px;
 }
-
+.inline-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 main {
-    max-width: 900px;
-    margin: 40px auto;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: rgba(44, 44, 44, 0.9);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    max-width: 1200px;
 }
 
 h2 {
